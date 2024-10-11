@@ -1,14 +1,18 @@
 .wrapper {
   display: flex;
 }
-
-.side_bar {
+.side-bar {
+  background-color: #253141;
   width: 300px;
   height: 100vh;
-  background-color: #253141;
+}
+.chat {
+  background-color: #FFFFFF;
+  width: calc(100vw - 300px);
 }
 
-.side-header {
+
+.side-ber-header {
   height: 100px;
   padding: 0 20px;
   background-color: #253141;
@@ -33,11 +37,6 @@
   color: white;
 }
 
-.main_chat {
-  width: calc(100vw - 300px);
-  background-color: #ffffff;
-}
-
 .chat-header {
   height: 100px;
   padding: 0 40px;
@@ -45,22 +44,23 @@
   justify-content: space-between;
 }
 
-.chat-title {
+.header-title {
   font-size: 24px;
   color: #333;
   margin-top: 36px;
 }
 
-.edit-room {
+.header-button {
   margin-top: 40px;
 }
 
-.edit-room a {
-  color: darkred;
-  border: 1px solid darkred;
-  padding: 20px;
+.header-button a {
   text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
 }
+
 
 .messages {
   height: calc(100vh - 100px - 90px);
@@ -102,22 +102,23 @@
   height: 90px;
   background-color: #DDDDDD;
   padding: 20px 40px;
+  display: flex;
 }
 
-.new-message {
+.form-input {
   background-color: white;
   display: flex;
   width: 100%;
 }
 
-.input-text {
+.form-message {
   height: 50px;
   width: 100%;
   padding-left: 10px;
   border: none;
 }
 
-.submit-btn {
+.form-submit {
   height: 50px;
   font-size: 16px;
   background-color: #38AEF0;
